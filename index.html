@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MNO AI LABS | Pioneering AI Innovation</title>
+    <meta name="description" content="MNO AI LABS - Cutting-edge AI solutions transforming industries and enhancing human potential">
+    
+    <!-- Google Fonts - Updated with more modern options -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- CSS Files - Modularized -->
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/components.css">
+    <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="styles/animation-styles.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/achievements.css">
+    <link rel="stylesheet" href="styles/achievements-carousel.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Screen - Modernized -->
+    <div class="loading-screen">
+        <div class="loader">
+            <img src="./images/logo.png" alt="Logo" class="loader-logo">
+        </div>
+        
+        <!-- Modern loading animation (replaces particles) -->
+        <div class="mesh-gradient"></div>
+        <div class="loading-glitch-lines"></div>
+        <div class="loading-noise"></div>
+        <div class="loading-geometric-shapes"></div>
+    </div>
+    
+    <!-- Static background (replacing Three.js canvas) -->
+    <div id="static-background"></div>
+    
+    <!-- Content container -->
+    <div class="content">
+        <!-- Navigation -->
+        <header class="header">
+            <div class="container">
+                <div class="navbar">
+                    <a href="#" class="logo">
+                        <img src="./images/logo.png" alt="MNO AI LABS Logo" class="logo-img">
+                        <!-- Logo text removed as requested -->
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <!-- Fixed navigation with proper underlines -->
+                            <li class="nav-item">
+                                <a href="#home" class="nav-link active">
+                                    Home
+                                    <span class="nav-underline"></span>
+                                </a>
+                            </li>
+                            <!--
+                            <li class="nav-item">
+                                <a href="#featured" class="nav-link">
+                                    Featured
+                                    <span class="nav-underline"></span>
+                                </a>
+                            </li>
+                            -->
+                            <li class="nav-item">
+                                <a href="#projects" class="nav-link">
+                                    Projects
+                                    <span class="nav-underline"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#teams" class="nav-link">
+                                    Teams
+                                    <span class="nav-underline"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#achievements" class="nav-link">
+                                    Achievements
+                                    <span class="nav-underline"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#contact" class="nav-link">
+                                    Contact
+                                    <span class="nav-underline"></span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="menu-toggle">
+                        <div class="hamburger">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#home" class="mobile-nav-link">Home</a></li>
+                <!--
+                <li class="mobile-nav-item"><a href="#featured" class="mobile-nav-link">Featured</a></li>
+                -->
+                <li class="mobile-nav-item"><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li class="mobile-nav-item"><a href="#teams" class="mobile-nav-link">Teams</a></li>
+                <li class="mobile-nav-item"><a href="#achievements" class="mobile-nav-link">Achievements</a></li>
+                <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link">Contact</a></li>
+            </ul>
+            <div class="mobile-social">
+                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <main>
+            <!-- Hero Section with Enhanced Typographic Animation -->
+            <section id="home" class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <span class="label">The Future of AI Solutions</span>
+                            <h1 class="title">
+                                <span>Pioneering</span>
+                                <span class="modern-gradient">AI Innovation</span>
+                                <span>for Tomorrow</span>
+                            </h1>
+                            <p class="description">MNO AI LABS brings together experts, innovators, and visionaries to create cutting-edge AI solutions that transform industries and enhance human potential.</p>
+                            <div class="hero-buttons">
+                                <a href="#contact" class="btn btn-primary neo-brutalism">
+                                    <span>Get Started</span>
+                                    <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                                <a href="#projects" class="btn btn-outline">View Projects</a>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="visual-container">
+                                <!-- Static visualization will be injected by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative elements -->
+                <div class="hero-decorations">
+                    <div class="deco-circle pulse-slow"></div>
+                    <div class="deco-triangle rotate-slow"></div>
+                    <div class="deco-square float-slow"></div>
+                    <div class="deco-grid"></div>
+                </div>
+            </section>
+
+            <!-- Stats Section - Modernized -->
+            <section class="stats">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-item neo-card">
+                            <div class="stat-number" id="stat-projects">50+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat-item neo-card">
+                            <div class="stat-number" id="stat-team">30+</div>
+                            <div class="stat-label">Team Members</div>
+                        </div>
+                        <div class="stat-item neo-card">
+                            <div class="stat-number" id="stat-satisfaction">95%</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-item neo-card">
+                            <div class="stat-number" id="stat-awards">12+</div>
+                            <div class="stat-label">Awards</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            <!~~ Featured Projects with Carousel - Updated ~~>
+            <section id="featured" class="featured section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Featured Projects</h2>
+                        <p class="section-description">
+                            Discover our most impactful AI solutions that are transforming industries and creating new possibilities.
+                        </p>
+                    </div>
+                    
+                    <div class="featured-carousel">
+                        <div class="featured-track">
+                            <!~~ Featured Project 1 ~~>
+                            <div class="featured-item" data-index="0">
+                                <div class="featured-content-wrap">
+                                    <div class="featured-image-container glass-morph">
+                                        <div class="featured-image">
+                                            <img src="./images/placeholder.png" alt="MediScan AI" class="img-responsive">
+                                        </div>
+                                        <div class="featured-overlay">
+                                            <span class="featured-tag">Healthcare</span>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content neo-card">
+                                        <h3 class="featured-title">MediScan AI</h3>
+                                        <p class="featured-description">An advanced diagnostic tool that uses deep learning to analyze medical images with 99.2% accuracy, enabling earlier detection of critical conditions and significantly improving treatment outcomes.</p>
+                                        <a href="#" class="featured-link">
+                                            <span>Explore Project</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!~~ Featured Project 2 ~~>
+                            <div class="featured-item" data-index="1">
+                                <div class="featured-content-wrap">
+                                    <div class="featured-image-container glass-morph">
+                                        <div class="featured-image">
+                                            <img src="./images/placeholder.png" alt="TradePredikt" class="img-responsive">
+                                        </div>
+                                        <div class="featured-overlay">
+                                            <span class="featured-tag">Finance</span>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content neo-card">
+                                        <h3 class="featured-title">TradePredikt</h3>
+                                        <p class="featured-description">A financial forecasting platform using natural language processing to analyze market sentiment and predict trends with unprecedented accuracy, helping investors make data-driven decisions.</p>
+                                        <a href="#" class="featured-link">
+                                            <span>Explore Project</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!~~ Featured Project 3 ~~>
+                            <div class="featured-item" data-index="2">
+                                <div class="featured-content-wrap">
+                                    <div class="featured-image-container glass-morph">
+                                        <div class="featured-image">
+                                            <img src="./images/placeholder.png" alt="UrbanFlow" class="img-responsive">
+                                        </div>
+                                        <div class="featured-overlay">
+                                            <span class="featured-tag">Smart Cities</span>
+                                        </div>
+                                    </div>
+                                    <div class="featured-content neo-card">
+                                        <h3 class="featured-title">UrbanFlow</h3>
+                                        <p class="featured-description">An integrated urban traffic management system that uses real-time data analysis and predictive algorithms to reduce congestion by 35% in metropolitan areas, creating more sustainable urban environments.</p>
+                                        <a href="#" class="featured-link">
+                                            <span>Explore Project</span>
+                                            <svg width="16" height="16" viewBox="0 0 16 16">
+                                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z"
+                                                fill="currentColor"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="carousel-controls">
+                        <button class="carousel-arrow carousel-prev neo-brutalism">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div class="carousel-dots">
+                            <button class="carousel-dot active" data-index="0"></button>
+                            <button class="carousel-dot" data-index="1"></button>
+                            <button class="carousel-dot" data-index="2"></button>
+                        </div>
+                        <button class="carousel-arrow carousel-next neo-brutalism">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <!~~ Decorative elements ~~>
+                <div class="featured-decorations">
+                    <div class="deco-gradient-blob"></div>
+                    <div class="deco-wireframe"></div>
+                </div>
+            </section>
+              -->
+            <!-- Projects Section - Updated with consistent tile shape -->
+            <!-- Projects Section - Updated with real project data -->
+
+            <!-- Projects Section - Updated with projects from markdown table -->
+            <section id="projects" class="projects section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Projects - PreSeed-01</h2>
+                        <p class="section-description">
+                            Explore our diverse portfolio of AI projects from PreSeed-01 (Basic Python & LLM Wrappers) across different industries and domains. 
+                        </p>
+                    </div>
+                    
+                    <div class="projects-filter">
+                        <button class="filter-btn neo-brutalism active" data-filter="all">All Projects</button>
+                        <button class="filter-btn neo-brutalism" data-filter="business">Business</button>
+                        <button class="filter-btn neo-brutalism" data-filter="travel">Travel</button>
+                        <button class="filter-btn neo-brutalism" data-filter="media">Media</button>
+                        <button class="filter-btn neo-brutalism" data-filter="research">Research</button>
+                        <button class="filter-btn neo-brutalism" data-filter="finance">Finance</button>
+                    </div>
+                    
+                    <!-- Updated Projects Grid with projects from markdown table -->
+                    <div class="projects-grid">
+                        <!-- Project 1: Business Idea Generator -->
+                        <div class="project-item glass-morph" data-category="business">
+                            <div class="project-image">
+                                <img src="./images/project_business.png" alt="Business Idea Generator" class="img-responsive">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <h3 class="project-title">Business Idea Generator</h3>
+                                    <p class="project-description">An AI-powered business idea generator with an integrated chatbot that suggests personalized startup concepts based on user skills, interests, and budget.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">AI</span>
+                                        <span class="project-tag">Business</span>
+                                        <span class="project-tag">Chatbot</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://huggingface.co/spaces/zZzahin/ai-business-idea-generator" class="btn btn-outline btn-sm" target="_blank">View Live</a>
+                                        <a href="https://github.com/zZzahin13/AI-Business-Idea-Generator" class="btn btn-outline btn-sm" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 2: Travel Bot -->
+                        <div class="project-item glass-morph" data-category="travel">
+                            <div class="project-image">
+                                <img src="./images/project_travel.png" alt="Travel Bot" class="img-responsive">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <h3 class="project-title">Travel Bot</h3>
+                                    <p class="project-description">AI-powered travel planner with real-time personalized recommendations.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">AI</span>
+                                        <span class="project-tag">Travel</span>
+                                        <span class="project-tag">Recommendations</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://huggingface.co/spaces/MuKa-Mut4ted/travel.bot" class="btn btn-outline btn-sm" target="_blank">View Live</a>
+                                        <a href="https://github.com/Tot4llyUnknowN/Travel-assistant" class="btn btn-outline btn-sm" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 3: Verse Vision -->
+                        <div class="project-item glass-morph" data-category="media">
+                            <div class="project-image">
+                                <img src="./images/project_verse.png" alt="Verse Vision" class="img-responsive">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <h3 class="project-title">Verse Vision</h3>
+                                    <p class="project-description">Video generator primarily for Quranic verses, with support for general text as well.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">AI</span>
+                                        <span class="project-tag">Media</span>
+                                        <span class="project-tag">Video</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://huggingface.co/spaces/tigeLtoNoS/FNv3" class="btn btn-outline btn-sm" target="_blank">View Live</a>
+                                        <a href="https://github.com/Misbah-Mursalin-Tamim/FN/" class="btn btn-outline btn-sm" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 4: Lunar AI Bot -->
+                        <div class="project-item glass-morph" data-category="research">
+                            <div class="project-image">
+                                <img src="./images/project_lunar.png" alt="Lunar AI Bot" class="img-responsive">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <h3 class="project-title">Lunar AI Bot</h3>
+                                    <p class="project-description">AI powered research tool that suggested Top research papers by scholarly api and summarize them with BART/T5 AI by Meta and downloaded by scihub api.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">AI</span>
+                                        <span class="project-tag">Research</span>
+                                        <span class="project-tag">BART/T5</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="#" class="btn btn-outline btn-sm disabled">Coming Soon</a>
+                                        <a href="#" class="btn btn-outline btn-sm disabled">Coming Soon</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Project 5: Stock Market Analyzer -->
+                        <div class="project-item glass-morph" data-category="finance">
+                            <div class="project-image">
+                                <img src="./images/project_stock.png" alt="Stock Market Analyzer" class="img-responsive">
+                            </div>
+                            <div class="project-overlay">
+                                <div class="project-content">
+                                    <h3 class="project-title">Stock Market Analyzer</h3>
+                                    <p class="project-description">A stock analyzer that collects price data from Alpha Vantage API, fetches related news from News API, and uses the Gemini API to analyze stock trends.</p>
+                                    <div class="project-tags">
+                                        <span class="project-tag">AI</span>
+                                        <span class="project-tag">Finance</span>
+                                        <span class="project-tag">Gemini API</span>
+                                    </div>
+                                    <div class="project-buttons">
+                                        <a href="https://huggingface.co/spaces/Shromi/Stock-Market-Analyzer" class="btn btn-outline btn-sm" target="_blank">View Live</a>
+                                        <a href="https://github.com/shr0mi/stock-market-analyzer" class="btn btn-outline btn-sm" target="_blank">View Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="projects-more">
+                        <a href="https://github.com/mnoailabs" class="btn btn-outline neo-brutalism" target="_blank">
+                            <span>View All Projects</span>
+                            <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16">
+                                <path d="M8 0L6.59 1.41L12.17 7H0V9H12.17L6.59 14.59L8 16L16 8L8 0Z" fill="currentColor"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Decorative elements -->
+                <div class="projects-decorations">
+                    <div class="deco-grid-lines"></div>
+                    <div class="deco-noise-overlay"></div>
+                </div>
+            </section>
+
+
+
+            <!-- Teams Section - Updated styling and added team tabs -->
+            <section id="teams" class="teams section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Meet Our Teams</h2>
+                        <p class="section-description">
+                            Our multidisciplinary teams of experts collaborate to create cutting-edge AI solutions.
+                        </p>
+                    </div>
+                    
+                    <!-- Team tabs will be injected by JavaScript -->
+                    <!-- Teams Carousel Container -->
+
+                    <!-- Team A -->
+                    <div class="team-section active" data-team="teamA">
+                        <div class="team-title">Team α - Alpha</div>
+                        <div class="team-grid">
+                            <!-- Team Member 1 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamA_minhaz.png" alt="Team A - Minhaz" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Md. Minhaz Rahman</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - NLP Specialist</p>
+                                        <p class="member-institution">CSE, KUET</p>
+                                    </div>
+                                    <p class="member-bio">Expert in natural language processing, creating sophisticated language models and conversational AI technologies.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Team Member 2 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamA_shromi.png" alt="Team A - Showvik" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Khaza Asif Karim Shromi</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - Generative AI</p>
+                                        <p class="member-institution">CSE, DU</p>
+                                    </div>
+                                    <p class="member-bio">Creative technologist developing cutting-edge generative models for content creation and synthetic data generation.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Team Member 3 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamA_showvik.png" alt="Team A - Shromi" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Showvik Mondol Joy</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - Robotics AI</p>
+                                        <p class="member-institution">ME, RUET</p>
+                                    </div>
+                                    <p class="member-bio">Robotics specialist implementing machine learning algorithms for intelligent robotic systems and autonomous navigation with predictive AI.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team B -->
+                    <div class="team-section" data-team="teamB">
+                        <div class="team-title">Team β - Beta</div>
+                        <div class="team-grid">
+                            <!-- Team Member 1 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamB_minhaz.png" alt="Team B - Minhaz" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Minhaz</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - MLOps</p>
+                                        <p class="member-institution">CSE, KUET</p>
+                                    </div>
+                                    <p class="member-bio">Infrastructure specialist designing scalable machine learning deployment pipelines and operational frameworks.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Team Member 2 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamB_orthe.png" alt="Team B - Orthe" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Tiaba Alam Orthe</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer & DevSecOps</p>
+                                        <p class="member-institution">ECE, KUET</p>
+                                    </div>
+                                    <p class="member-bio">Advanced researcher developing complex MLOps systems and ensuring Privacy & Security.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Team Member 3 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamB_sifat.png" alt="Team B - Sifat" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Mushtasin Mostak Sifat</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - Full Stack AI</p>
+                                        <p class="member-institution">Physics, SUST</p>
+                                    </div>
+                                    <p class="member-bio">Versatile engineer integrating machine learning solutions across frontend, backend, and infrastructure platforms.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team C (Team K) -->
+                    <div class="team-section" data-team="teamC">
+                        <div class="team-title">Team κ - Kappa</div>
+                        <div class="team-grid">
+                            <!-- Team Member 1 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamK_faraj.png" alt="Team K - Faraj" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Md. Imran Faraj</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - Predictive Analytics</p>
+                                        <p class="member-institution">CSE, KUET</p>
+                                    </div>
+                                    <p class="member-bio">Data-driven professional creating advanced predictive models for business intelligence, risk assessment, and strategic forecasting.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Team Member 2 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamK_tamim.png" alt="Team K - Tamim" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Misbah Mursalin Tamim</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - Computer Vision</p>
+                                        <p class="member-institution">CSE, KUET</p>
+                                    </div>
+                                    <p class="member-bio">Specialized expert in image and video processing, developing state-of-the-art visual recognition and interpretation systems.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Team Member 3 -->
+                            <div class="team-member neo-card">
+                                <div class="member-image-container">
+                                    <div class="member-image">
+                                        <img src="./images/teamK_zahin.png" alt="Team K - Zahin" class="img-responsive">
+                                    </div>
+                                </div>
+                                <div class="member-info">
+                                    <h3 class="member-name">Abrar Islam Zahin</h3>
+                                    <div class="member-titles">
+                                        <p class="member-position">ML Engineer - Deep Learning</p>
+                                        <p class="member-institution">CSE, KUET</p>
+                                    </div>
+                                    <p class="member-bio">Cutting-edge researcher developing sophisticated neural network architectures and advanced deep learning algorithms.</p>
+                                    <div class="member-social">
+                                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Team Indicators -->
+                    <div class="team-indicator">
+                        <div class="team-dot active" data-team="teamA"></div>
+                        <div class="team-dot" data-team="teamB"></div>
+                        <div class="team-dot" data-team="teamC"></div>
+                    </div>
+                    
+                    <!-- Team navigation buttons will be injected by JavaScript -->
+                </div>
+                
+                <!-- Decorative elements -->
+                <div class="teams-decorations">
+                    <div class="deco-circuit-lines"></div>
+                    <div class="deco-nodes"></div>
+                </div>
+            </section>
+
+            <!-- This is a partial HTML update showing the repositioned sections -->
+            <!-- Replace the existing sections in your index.html with the following code -->
+
+            <!-- First, remove the achievements section from its current position -->
+
+            <!-- Then add this updated achievements section after the team section -->
+            <!-- Improved Achievements Carousel HTML Structure -->
+            <section id="achievements" class="achievements section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Our Achievements</h2>
+                        <p class="section-description">
+                            Recognition of our innovative work in AI solutions and research excellence.
+                        </p>
+                    </div>
+                    
+                    <!-- Enhanced achievements showcase with better integration -->
+                    <div class="achievements-showcase">
+                        <div class="achievement-stage">
+                            <!-- Achievement Item 1 -->
+                            <div class="achievement-item active" data-index="0">
+                                <div class="achievement-content-wrap">
+                                    <div class="achievement-image">
+                                        <img src="./images/bitfest.jpg" alt="Research Excellence Award" class="img-responsive">
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h3 class="achievement-title">KUET Bitfest 2025 Runners-Up</h3>
+                                        <div class="achievement-date">January 2025</div>
+                                        <p class="achievement-description"><b>Augmentor AI</b> by Team Beta (formerly, Team Augmentor) secured second runner-up position in the Project Display category at KUET Bitfest 2025. The innovative text-to-video synthesizer leverages WolframAlpha, Manim, and other utility technologies to create mathematically accurate educational animations that enable deeper conceptual understanding for teachers and students.</p>
+                                        <div class="achievement-meta">
+                                            <span class="achievement-category">Project</span>
+                                            <a href="https://kuetbitfest2025.com/" class="achievement-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--
+                            # Achievement Item 2
+                            <div class="achievement-item" data-index="1">
+                                <div class="achievement-content-wrap">
+                                    <div class="achievement-image">
+                                        <img src="./images/placeholder.png" alt="Healthcare Innovation Prize" class="img-responsive">
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h3 class="achievement-title">Healthcare Innovation Prize</h3>
+                                        <div class="achievement-date">October 2024</div>
+                                        <p class="achievement-description">MediScan AI recognized for transforming early disease detection with 99.2% accuracy, improving patient outcomes across 25 major hospitals. This technology has helped save countless lives through early intervention and personalized treatment plans.</p>
+                                        <div class="achievement-meta">
+                                            <span class="achievement-category">Healthcare</span>
+                                            <a href="#" class="achievement-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            # Achievement Item 3
+                            <div class="achievement-item" data-index="2">
+                                <div class="achievement-content-wrap">
+                                    <div class="achievement-image">
+                                        <img src="./images/placeholder.png" alt="Tech for Good Award" class="img-responsive">
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h3 class="achievement-title">Tech for Good Award</h3>
+                                        <div class="achievement-date">August 2024</div>
+                                        <p class="achievement-description">Honored for developing accessible AI education tools that have empowered over 50,000 students from underserved communities worldwide. Our curriculum has been adopted by educational institutions in 15 countries, bridging the technology education gap.</p>
+                                        <div class="achievement-meta">
+                                            <span class="achievement-category">Education</span>
+                                            <a href="#" class="achievement-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            # Achievement Item 4
+                            <div class="achievement-item" data-index="3">
+                                <div class="achievement-content-wrap">
+                                    <div class="achievement-image">
+                                        <img src="./images/placeholder.png" alt="Sustainability Impact Recognition" class="img-responsive">
+                                    </div>
+                                    <div class="achievement-content">
+                                        <h3 class="achievement-title">Sustainability Impact Recognition</h3>
+                                        <div class="achievement-date">May 2024</div>
+                                        <p class="achievement-description">UrbanFlow smart city solution recognized for reducing urban carbon emissions by 23% in pilot cities through optimized traffic and energy management. This system is now being implemented in major metropolitan areas worldwide as part of climate action initiatives.</p>
+                                        <div class="achievement-meta">
+                                            <span class="achievement-category">Smart Cities</span>
+                                            <a href="#" class="achievement-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    -->
+                        
+                        <!-- Improved carousel controls -->
+                        <div class="achievements-controls">
+                            <button class="achievements-prev" aria-label="Previous achievement">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <div class="achievements-dots">
+                                <button class="achievements-dot active" data-index="0" aria-label="Achievement 1"></button>
+                                <button class="achievements-dot" data-index="1" aria-label="Achievement 2"></button>
+                                <button class="achievements-dot" data-index="2" aria-label="Achievement 3"></button>
+                                <button class="achievements-dot" data-index="3" aria-label="Achievement 4"></button>
+                            </div>
+                            <button class="achievements-next" aria-label="Next achievement">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Decorative elements -->
+                <div class="section-decorations">
+                    <div class="deco-line-horizontal"></div>
+                    <div class="deco-dots-pattern"></div>
+                    <div class="deco-circle"></div>
+                </div>
+            </section>
+
+            <!-- Contact Section - Modernized -->
+            <section id="contact" class="contact section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <h2 class="section-title">Get in Touch</h2>
+                        <p class="section-description">
+                            Ready to transform your ideas into reality? Contact us to discuss how our AI solutions can help you innovate.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-grid">
+                        <div class="contact-form-container glass-card">
+                            <form id="contactForm" class="contact-form">
+                                <div class="form-group">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" id="name" name="name" class="form-input neo-brutalism" placeholder="John Doe" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" name="email" class="form-input neo-brutalism" placeholder="john@example.com" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" id="subject" name="subject" class="form-input neo-brutalism" placeholder="Project Inquiry">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea id="message" name="message" class="form-textarea neo-brutalism" rows="4" placeholder="Tell us about your project or inquiry..." required></textarea>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary btn-full neo-brutalism">
+                                    <span>Send Message</span>
+                                    <svg width="16" height="16" viewBox="0 0 16 16">
+                                        <path d="M15.707,7.293l-7-7c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L13.586,8l-6.293,6.293 c-0.391,0.391-0.391,1.023,0,1.414C7.488,15.902,7.744,16,8,16s0.512-0.098,0.707-0.293l7-7 C16.098,8.316,16.098,7.684,15.707,7.293z" fill="currentColor"/>
+                                        <path d="M8.707,7.293l-7-7c-0.391-0.391-1.023-0.391-1.414,0s-0.391,1.023,0,1.414L6.586,8l-6.293,6.293 c-0.391,0.391-0.391,1.023,0,1.414C0.488,15.902,0.744,16,1,16s0.512-0.098,0.707-0.293l7-7 C9.098,8.316,9.098,7.684,8.707,7.293z" fill="currentColor"/>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <div class="info-card glass-card">
+                                <h3 class="info-title">Contact Information</h3>
+                                <div class="info-item">
+                                    <div class="info-icon neo-brutalism">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <address>KUET</address>
+                                        <address>Khulna, Bangladesh</address>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <div class="info-icon neo-brutalism">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <a href="mailto:mnoailabs@gmail.com">mnoailabs@gmail.com</a>
+                                    </div>
+                                </div>
+                                
+                                <div class="info-item">
+                                    <div class="info-icon neo-brutalism">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <a href="tel:+8801629747727">+880 (162) 974 727</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="social-card glass-card">
+                                <h3 class="social-title">Connect With Us</h3>
+                                <div class="social-grid">
+                                    <a href="#" class="social-box neo-brutalism">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#" class="social-box neo-brutalism">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="#" class="social-box neo-brutalism">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="social-box neo-brutalism">
+                                        <i class="fab fa-medium"></i>
+                                    </a>
+                                    <a href="#" class="social-box neo-brutalism">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Decorative elements -->
+                <div class="contact-decorations">
+                    <div class="deco-rings"></div>
+                    <div class="deco-gradient"></div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer - Updated -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-brand">
+                        <a href="#" class="footer-logo">
+                            <img src="./images/logo.png" alt="MNO AI LABS Logo" class="logo-img">
+                        </a>
+                        <p class="footer-tagline">Pioneering AI innovation for tomorrow's challenges.</p>
+                        <div class="footer-social">
+                            <a href="www.facebook.com/mnoailabs" class="footer-social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="footer-social-link"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="www.https://github.com/mnoailabs" class="footer-social-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 class="footer-title">Quick Links</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#achievements">Achievements</a></li>
+                            <!--
+                            <li><a href="#featured">Featured Projects</a></li>
+                            -->
+                            <li><a href="#projects">All Projects</a></li>
+                            <li><a href="#teams">Our Teams</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-links">
+                        <h4 class="footer-title">Services</h4>
+                        <ul class="footer-menu">
+                            <li><a href="#">AI Consulting</a></li>
+                            <li><a href="#">Custom AI Solutions</a></li>
+                            <li><a href="#">AI Integration</a></li>
+                            <li><a href="#">AI Training</a></li>
+                            <li><a href="#">Research Collaboration</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-newsletter">
+                        <h4 class="footer-title">Newsletter</h4>
+                        <p class="footer-text">Stay updated with our latest AI innovations and insights.</p>
+                        <form class="newsletter-form">
+                            <div class="form-group">
+                                <input type="email" placeholder="Your email" class="newsletter-input neo-brutalism" required>
+                                <button type="submit" class="newsletter-button">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p class="copyright">&copy; 2025 MNO AI LABS. All rights reserved.</p>
+                </div>
+            </div>
+            
+            <!-- Footer decorative elements -->
+            <div class="footer-decorations">
+                <div class="footer-noise"></div>
+                <div class="footer-grid-lines"></div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <!-- Three.js is not used anymore as we're using static alternatives -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/split-type/0.3.3/split-type.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    <!-- Modularized JavaScript -->
+    <script src="js/utils.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/carousels.js"></script>
+    <script src="js/contact-form.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/modernAnimations.js"></script>
+    <script src="js/achievements-carousel.js"></script>
+
+
+    <!-- This script fixes the issue with faded elements -->
+    <script>
+        // Ensure all elements are visible when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Fix for faded elements
+            const fixFadedElements = function() {
+                // List of selectors that may have animation issues
+                const selectors = [
+                    '.hero-content', '.hero-text', '.title span', '.description',
+                    '.hero-buttons', '.btn', '.stat-item', '.stat-number',
+                    '.section-header', '.section-title', '.section-description',
+                    '.project-item', '.team-member', '.achievement-item',
+                    '.featured-item', '.contact-form-container', '.info-card', 
+                    '.social-card', '.footer-grid', '.footer-brand',
+                    '.footer-links', '.footer-newsletter', '.achievement-content-wrap'
+                ];
+                
+                // Fix visibility of each element
+                selectors.forEach(selector => {
+                    document.querySelectorAll(selector).forEach(element => {
+                        // Reset opacity and visibility
+                        element.style.opacity = '1';
+                        element.style.visibility = 'visible';
+                        
+                        // Reset transforms that might be causing elements to be out of place
+                        if (element.style.transform && element.style.transform !== 'none') {
+                            element.style.transform = 'none';
+                        }
+                    });
+                });
+                
+                // Ensure active carousel items are visible
+                document.querySelectorAll('.active').forEach(item => {
+                    item.style.opacity = '1';
+                    item.style.visibility = 'visible';
+                    item.style.transform = 'none';
+                });
+            };
+            
+            // Run immediately and after a short delay to catch any late-loading elements
+            fixFadedElements();
+            setTimeout(fixFadedElements, 500);
+        });
+    </script>
+    <!-- Add this code just before the closing </body> tag in your index.html -->
+    <script>
+        // Immediate fix to prevent achievements carousel fade-out
+        document.addEventListener('DOMContentLoaded', function() {
+            // Immediately make all achievement elements visible
+            document.querySelectorAll('.achievement-item, .achievement-content-wrap, .achievement-image, .achievement-content')
+                .forEach(el => {
+                    el.style.opacity = '1';
+                    el.style.visibility = 'visible';
+                });
+                
+            // Make sure the carousel stage has proper height
+            const stage = document.querySelector('.achievement-stage');
+            const activeItem = document.querySelector('.achievement-item');
+            if (stage && activeItem) {
+                // Set initial height to prevent layout shift
+                stage.style.height = `${activeItem.offsetHeight}px`;
+                
+                // Activate the first item
+                activeItem.classList.add('active');
+                activeItem.style.position = 'relative';
+            }
+            
+            // Add initial glowing effect
+            const stageElement = document.querySelector('.achievement-stage');
+            if (stageElement) {
+                stageElement.classList.add('active-glow');
+            }
+        });
+    </script>
+
+</body>
+</html>

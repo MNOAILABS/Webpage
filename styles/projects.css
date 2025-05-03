@@ -1,0 +1,405 @@
+/* Enhanced Project Section Styles with Fixed Button Interactivity */
+
+/* ===== Projects Section ===== */
+.projects {
+    background-color: var(--color-dark);
+    position: relative;
+    padding: var(--spacing-xxl) 0;
+    overflow: hidden;
+}
+
+.projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-primary-light), transparent);
+    opacity: 0.3;
+}
+
+.projects-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-xl);
+    padding: var(--spacing-md);
+    background: rgba(15, 15, 15, 0.4);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
+}
+
+.filter-btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: var(--radius-md);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--color-gray-300);
+    background-color: rgba(15, 15, 15, 0.6);
+    border: 2px solid transparent;
+    transition: all var(--transition-fast);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.filter-btn:hover {
+    color: var(--color-white);
+    background-color: rgba(99, 102, 241, 0.2);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.2);
+}
+
+.filter-btn.active {
+    color: var(--color-white);
+    background-color: var(--color-primary);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.3);
+}
+
+/* Improved Projects Grid with consistent tile shapes */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns of equal width */
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.project-item {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/3; /* Consistent aspect ratio for all items */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(0);
+    transition: transform var(--transition-medium), box-shadow var(--transition-medium);
+}
+
+.project-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.project-image {
+    width: 100%;
+    height: 100%;
+}
+
+.project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-medium);
+}
+
+.project-item:hover .project-image img {
+    transform: scale(1.05);
+}
+
+/* Improved overlay with proper z-index and pointer-events handling */
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(5, 5, 5, 0.95) 0%,
+        rgba(5, 5, 5, 0.8) 30%,
+        rgba(5, 5, 5, 0.1) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: var(--spacing-lg);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all var(--transition-medium);
+    pointer-events: auto !important; /* Ensure overlay can receive events */
+    z-index: 5; /* Ensure overlay has high z-index */
+}
+
+.project-item:hover .project-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+.project-content {
+    transform: translateY(20px);
+    transition: transform var(--transition-medium) 0.01s;
+    /* Ensure content has proper z-index */
+    position: relative;
+    z-index: 6;
+    pointer-events: auto;
+}
+
+.project-item:hover .project-content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.project-title {
+    font-size: 2.4rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-white);
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.project-description {
+    color: var(--color-gray-300);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
+
+.project-tag {
+    display: inline-block;
+    background: rgba(99, 102, 241, 0.2);
+    border: 1px solid rgba(129, 140, 248, 0.3);
+    color: var(--color-gray-200);
+    padding: 0.6rem 1.2rem;
+    border-radius: 10rem;
+    font-size: 1.2rem;
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
+    letter-spacing: 0.05em;
+}
+
+/* Fixed Project Buttons Container to ensure clickability */
+.project-buttons {
+    display: flex;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-md);
+    position: relative;
+    z-index: 10; /* Higher z-index to ensure buttons are clickable */
+    pointer-events: auto;
+}
+
+/* Small Button Style for Project Cards with improved interactivity */
+.btn-sm {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-radius: var(--radius-md);
+    position: relative;
+    cursor: pointer;
+    /* Ensure the button is on top of everything */
+    z-index: 20;
+    /* Make sure background color is opaque enough */
+    background-color: rgba(15, 15, 15, 0.8);
+    border: 1px solid var(--color-primary);
+    color: white;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.3s ease;
+    min-width: 120px;
+    pointer-events: auto;
+}
+
+.btn-sm:hover {
+    transform: translateY(-3px);
+    background-color: var(--color-primary);
+    box-shadow: 0 5px 15px rgba(99, 102, 241, 0.4);
+}
+
+/* Make project buttons more visually distinct */
+.project-buttons .btn {
+    border: 1px solid var(--color-primary-light);
+    transition: all 0.3s ease;
+    /* Make sure text is visible */
+    color: var(--color-white);
+    font-weight: 600;
+    /* Add distinct visual cue to show these are interactive */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto;
+}
+
+.project-buttons .btn:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: var(--color-primary);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: inherit;
+}
+
+.project-buttons .btn:hover:after {
+    opacity: 1;
+}
+
+/* Force buttons to be visible when project is hovered */
+.project-item:hover .project-buttons .btn,
+.project-item:hover .project-buttons .btn-sm,
+.project-item:hover .project-buttons a {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Disabled Button State */
+.btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Decorative elements */
+.projects-decorations {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: var(--z-decorations);
+}
+
+.deco-grid-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(99, 102, 241, 0.05) 1px, transparent 1px), 
+                      linear-gradient(90deg, rgba(99, 102, 241, 0.05) 1px, transparent 1px);
+    background-size: 5rem 5rem;
+    opacity: 0.3;
+}
+
+.deco-noise-overlay {
+    position: absolute;
+    inset: 0;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMDAiIGhlaWdodD0iMjAwIj48ZmlsdGVyIGlkPSJub2lzZSIgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSI+PGZlVHVyYnVsZW5jZSB0eXBlPSJmcmFjdGFsTm9pc2UiIGJhc2VGcmVxdWVuY3k9IjAuNzUiIG51bU9jdGF2ZXM9IjMiIHN0aXRjaFRpbGVzPSJzdGl0Y2giLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgZmlsdGVyPSJ1cmwoI25vaXNlKSIgb3BhY2l0eT0iMC4wNSIvPjwvc3ZnPg==');
+    opacity: 0.5;
+}
+
+.projects-more {
+    text-align: center;
+    margin-top: var(--spacing-xl);
+}
+
+.projects-more .btn {
+    position: relative;
+    background: rgba(15, 15, 15, 0.6);
+    border: 2px solid var(--color-primary);
+    padding: 1.2rem 2.4rem;
+    overflow: hidden;
+}
+
+.projects-more .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--color-primary);
+    opacity: 0;
+    z-index: -1;
+    transition: opacity var(--transition-medium);
+}
+
+.projects-more .btn:hover::before {
+    opacity: 1;
+}
+
+/* Project Filter Transition Styles */
+.project-filter-transition {
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1),
+                opacity 0.5s ease;
+}
+
+.project-filter-exit {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.project-filter-enter {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.project-filter-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Filter Animation Styles */
+@keyframes filterActivate {
+    0% {
+        transform: scaleX(0);
+    }
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+.filter-active-indicator {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gradient-futuristic);
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: filterActivate 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Enhanced responsive adjustments */
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+        gap: var(--spacing-lg);
+    }
+    
+    .project-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn-sm {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .project-buttons {
+        flex-direction: column;
+    }
+    
+    .btn-sm {
+        padding: 1rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-title {
+        font-size: 2rem;
+    }
+    
+    .project-description {
+        font-size: 1.3rem;
+    }
+}
+
+.project-item:nth-child(n) {
+    grid-column: auto; /* Reset any specific column spans */
+    grid-row: auto; /* Reset any specific row spans */
+}

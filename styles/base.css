@@ -1,0 +1,440 @@
+/* Enhanced Base Styles for MNO AI LABS - Edgy Modern Design */
+
+:root {
+    /* Modern Color Palette - More vibrant and futuristic */
+    --color-primary: #6366f1;           /* Indigo */
+    --color-primary-light: #818cf8;     /* Lighter indigo */
+    --color-primary-dark: #4f46e5;      /* Darker indigo */
+    --color-accent: #10b981;            /* Emerald green */
+    --color-accent-light: #34d399;      /* Light emerald */
+    --color-accent-dark: #059669;       /* Dark emerald */
+    --color-secondary: #ec4899;         /* Pink for highlights */
+    --color-secondary-light: #f472b6;   /* Light pink */
+    
+    /* Dark Mode Colors */
+    --color-black: #050505;             /* Near black */
+    --color-dark: #0a0a0a;              /* Very dark gray */
+    --color-dark-secondary: #0f0f0f;    /* Slightly lighter dark */
+    --color-dark-tertiary: #141414;     /* Even lighter dark */
+    
+    /* Light colors */
+    --color-white: #ffffff;             /* Pure white */
+    --color-offwhite: #f9fafb;          /* Off-white */
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    
+    /* Modern Gradients */
+    --gradient-primary: linear-gradient(135deg, #6366f1, #818cf8);
+    --gradient-futuristic: linear-gradient(135deg, #6366f1, #10b981, #3b82f6);
+    --gradient-cyberpunk: linear-gradient(135deg, #6366f1, #ec4899, #f97316);
+    --gradient-dark: linear-gradient(135deg, #111111, #0f0f0f, #050505);
+    --gradient-mesh-1: radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.3) 0%, transparent 70%);
+    --gradient-mesh-2: radial-gradient(at 100% 0%, rgba(16, 185, 129, 0.3) 0%, transparent 70%);
+    --gradient-mesh-3: radial-gradient(at 100% 100%, rgba(236, 72, 153, 0.3) 0%, transparent 70%);
+    --gradient-mesh-4: radial-gradient(at 0% 100%, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
+    
+    /* Spacings */
+    --spacing-xs: 0.4rem;
+    --spacing-sm: 0.8rem;
+    --spacing-md: 1.6rem;
+    --spacing-lg: 2.4rem;
+    --spacing-xl: 3.2rem;
+    --spacing-xxl: 4.8rem;
+    
+    /* Border Radii */
+    --radius-sm: 0.4rem;
+    --radius-md: 0.8rem;
+    --radius-lg: 1.6rem;
+    --radius-xl: 2.4rem;
+    --radius-round: 50%;
+    
+    /* Shadows */
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 20px 25px rgba(0, 0, 0, 0.1);
+    --shadow-neon: 0 0 10px rgba(99, 102, 241, 0.5), 0 0 20px rgba(99, 102, 241, 0.3);
+    --shadow-neon-green: 0 0 10px rgba(16, 185, 129, 0.5), 0 0 20px rgba(16, 185, 129, 0.3);
+    --shadow-neon-pink: 0 0 10px rgba(236, 72, 153, 0.5), 0 0 20px rgba(236, 72, 153, 0.3);
+    
+    /* Transitions */
+    --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-medium: 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    
+    /* Effects */
+    --blur-effect: blur(10px);
+    
+    /* Layouts */
+    --header-height: 8rem;
+    --container-width: 120rem;
+    
+    /* Z-index layers */
+    --z-background: -10;
+    --z-decorations: -5;
+    --z-content: 1;
+    --z-above: 5;
+    --z-header: 100;
+    --z-modal: 1000;
+    --z-loader: 9999;
+}
+
+/* Base Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%; /* 1rem = 10px */
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Space Grotesk', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+    font-size: 1.6rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+}
+
+/* Enhanced Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: var(--spacing-md);
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    font-size: clamp(4rem, 5vw, 8rem);
+    letter-spacing: -0.04em;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: clamp(3.2rem, 4vw, 5rem);
+    letter-spacing: -0.03em;
+    position: relative;
+}
+
+h3 {
+    font-size: clamp(2.4rem, 3vw, 3.2rem);
+    letter-spacing: -0.02em;
+}
+
+h4 {
+    font-size: clamp(2rem, 2vw, 2.4rem);
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: var(--color-gray-300);
+}
+
+/* Fixed Text Effects */
+.gradient-text {
+    background: var(--gradient-futuristic);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% center; }
+    50% { background-position: 100% center; }
+    100% { background-position: 0% center; }
+}
+
+/* Hero Section Typography */
+.hero .title {
+    font-size: clamp(4rem, 5vw, 6.5rem);
+    line-height: 1.1;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hero .title span {
+    display: block;
+    margin-bottom: 0.2em;
+}
+
+/* Override problematic classes */
+.hero .label {
+    display: inline-block;
+    background: rgba(99, 102, 241, 0.15);
+    border: 1px solid rgba(129, 140, 248, 0.2);
+    color: var(--color-primary-light);
+    padding: 0.8rem 1.6rem;
+    border-radius: 10rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-md);
+    backdrop-filter: var(--blur-effect);
+    -webkit-backdrop-filter: var(--blur-effect);
+    letter-spacing: 0.05em;
+}
+
+.hero .description {
+    font-size: 1.8rem;
+    color: var(--color-gray-300);
+    margin-bottom: var(--spacing-xl);
+    line-height: 1.7;
+    max-width: 45rem;
+}
+
+/* Modern gradient style */
+.modern-gradient {
+    background: linear-gradient(to right, #6366f1, #10b981);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    animation: gradientShift 5s ease infinite;
+}
+
+/* Layout Containers */
+.container {
+    width: 90%;
+    max-width: var(--container-width);
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: var(--spacing-xxl) 0;
+}
+
+/* Improved Base Media Queries */
+@media (max-width: 1200px) {
+    html {
+        font-size: 60%; /* 1rem = 9.6px */
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 56.25%; /* 1rem = 9px */
+    }
+    
+    .hero .title {
+        text-align: center;
+    }
+    
+    .hero .description {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 50%; /* 1rem = 8px */
+    }
+    
+    .hero .title {
+        font-size: clamp(3.6rem, 6vw, 5rem);
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 45%; /* 1rem = 7.2px */
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-dark-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary-dark);
+    border-radius: var(--radius-md);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--color-primary);
+}
+
+/* Added "Skip to content" accessibility link */
+.skip-to-content {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+    background: var(--color-primary);
+    color: var(--color-white);
+    padding: 1rem 2rem;
+    z-index: 9999;
+    border-radius: var(--radius-md);
+}
+
+.skip-to-content:focus {
+    top: 1rem;
+    left: 1rem;
+}
+
+/* Improved focus states for accessibility */
+:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+/* Dark mode toggle styles */
+.theme-toggle {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    background: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 100;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: all var(--transition-medium);
+}
+
+.theme-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(99, 102, 241, 0.5);
+}
+
+/* Fixes for content visibility and animations */
+.fade-in {
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* State classes */
+.body-loaded .hero-content {
+    opacity: 1;
+}
+/* Add this to your CSS file (components.css or a custom CSS file) */
+
+/* Styling for member titles container */
+.member-titles {
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* Style for the member position */
+  .member-position {
+    color: var(--color-primary-light);
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  
+  /* New style for the institution */
+  .member-institution {
+    color: var(--color-accent);
+    font-weight: 500;
+    font-size: 1.4rem;
+    opacity: 0.9;
+    margin-bottom: var(--spacing-md);
+  }
+  
+  /* Keep the underline only for position */
+  .member-position::after {
+    content: '';
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    width: 3rem;
+    height: 2px;
+    background: var(--gradient-futuristic);
+  }
+  
+  /* Remove any margin from the last element in titles to maintain spacing */
+  .member-titles > *:last-child {
+    margin-bottom: 0;
+  }
+  
+  /* Ensure proper spacing between titles and bio */
+  .member-bio {
+    margin-top: var(--spacing-md);
+  }
